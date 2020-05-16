@@ -5,6 +5,6 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-func Boot(e echo.Echo)  {
+func Boot(e *echo.Echo)  {
 	e.GET("/i-am-alive", handler.IAmAliveHandler)
 }
